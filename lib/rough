@@ -1,0 +1,135 @@
+Widget build2(BuildContext context) {
+  return Scaffold(
+    drawer: const Drawer(
+      child: Column(
+        children: [Text("data")],
+      ),
+    ),
+    appBar: AppBar(
+      backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+      title: const Text("EventMaster"),
+      // leading: const Icon(Icons.event_note),
+      actions: [
+        const IconButton(
+          icon: Icon(Icons.login),
+          onPressed: null,
+        ),
+        Container(
+          width: MediaQuery.of(context).size.width / 80,
+        )
+      ],
+    ),
+    body: SafeArea(
+      child: Container(
+        padding: const EdgeInsets.all(8),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Container(
+              padding: const EdgeInsets.all(16),
+              color: Colors.brown,
+              child: Row(
+                children: [
+                  Container(
+                    margin: const EdgeInsets.only(right: 16),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(80),
+                      color: Colors.black,
+                    ),
+                    padding: const EdgeInsets.all(8),
+                    child: Icon(
+                      color: Colors.white,
+                      Icons.person,
+                      size: MediaQuery.of(context).size.width / 12,
+                    ),
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Saadullah",
+                        style: Theme.of(context).textTheme.headlineMedium,
+                      ),
+                      Text(
+                        "2021 - CS - 414",
+                        style: Theme.of(context).textTheme.bodyMedium,
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            Column(
+              children: [
+                ListTile(
+                  tileColor: Colors.blueGrey,
+                  leading: SizedBox(
+                    width: MediaQuery.of(context).size.width * 0.15,
+                    child: Text(
+                      "Famous Organizers",
+                      textAlign: TextAlign.center,
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                  ),
+                  title: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Column(
+                        children: [
+                          ClipOval(
+                            child: Image.asset(
+                              "images/prosoft.jpg",
+                              height: MediaQuery.of(context).size.shortestSide *
+                                  0.15,
+                            ),
+                          ),
+                          Text(
+                            "Pro-Soft",
+                            style: Theme.of(context).textTheme.headlineSmall,
+                          )
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          ClipOval(
+                            child: Image.asset(
+                              "images/uet tribune.jpg",
+                              height: MediaQuery.of(context).size.shortestSide *
+                                  0.15,
+                            ),
+                          ),
+                          Text(
+                            "UET Tribune",
+                            style: Theme.of(context).textTheme.headlineSmall,
+                          )
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          ClipOval(
+                            child: Image.asset(
+                              "images/cdes.jpg",
+                              height: MediaQuery.of(context).size.shortestSide *
+                                  0.15,
+                            ),
+                          ),
+                          Text(
+                            "CDES",
+                            style: Theme.of(context).textTheme.headlineSmall,
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Container(
+              height: MediaQuery.of(context).size.height * 0.5,
+            ),
+          ],
+        ),
+      ),
+    ),
+  );
+}

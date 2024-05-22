@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1052868417560",
+    "project_id": "eventmaster-rcet",
+    "storage_bucket": "eventmaster-rcet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052868417560:android:7087b2c42f233fc3608b6d",
+        "android_client_info": {
+          "package_name": "com.example.event_master"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBi19t6XrWQUAfvQh9_cjfpHjMvpxcX3pc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
